@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 | UnigDesign</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* 博客页面特定样式 */
+        .blog-page {
+            padding: 100px 0;
+            background-color: #f8f8f8;
+        }
+        
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .blog-articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .blog-article-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .blog-article-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-article-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .blog-article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .blog-article-content {
+            padding: 25px;
+        }
+        
+        .blog-article-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .blog-article-date {
+            background-color: #e8f5e8;
+            color: #2a7a2a;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        
+        .blog-article-category {
+            margin-left: 10px;
+        }
+        
+        .blog-article-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .blog-article-content p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .read-more-btn {
+            display: inline-block;
+            color: #2a7a2a;
+            font-weight: 600;
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        .read-more-btn:hover {
+            border-bottom: 2px solid #2a7a2a;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-articles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo1.jpg" alt="UnigDesign Logo" class="logo-img">
+                    <div class="logo-text">Unig<span class="logo-accent">Design</span></div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html#home" class="nav-link">首页</a></li>
+                    <li><a href="../index.html#about" class="nav-link">关于我们</a></li>
+                    <li><a href="../index.html#features" class="nav-link">产品介绍</a></li>
+                    <li><a href="../index.html#specs" class="nav-link">技术规格</a></li>
+                    <li><a href="../index.html#applications" class="nav-link">适用人群</a></li>
+                    <li><a href="index.html" class="nav-link" style="color: #2a7a2a;">博客</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 博客页面 -->
+    <section class="blog-page">
+        <div class="container blog-container">
+            <div class="section-title" style="text-align: center;">
+                <h2>博客与见解</h2>
+                <p>探索高尔夫技术、装备趋势与专业见解</p>
+            </div>
+            
+            <div class="blog-articles">
+                <!-- 文章1 -->
+                <div class="blog-article-card">
+                    <div class="blog-article-image">
+                        <img src="../images/tech2.jpg" alt="碳纤维杆身技术解析">
+                    </div>
+                    <div class="blog-article-content">
+                        <div class="blog-article-meta">
+                            <span class="blog-article-date">2023年10月15日</span>
+                            <span class="blog-article-category">技术解析</span>
+                        </div>
+                        <h3>碳纤维杆身技术：如何优化挥杆效率与精准度</h3>
+                        <p>深入了解现代碳纤维杆身技术如何帮助高尔夫选手提升挥杆效率与击球精准度。本文探讨了UnigDesign在材料科学与工程设计方面的创新突破。</p>
+                        <a href="carbon-fiber-technology.html" class="read-more-btn">阅读全文 →</a>
+                    </div>
+                </div>
+                
+                <!-- 文章2 -->
+                <div class="blog-article-card">
+                    <div class="blog-article-image">
+                        <img src="../images/main.jpg" alt="高尔夫装备选择指南">
+                    </div>
+                    <div class="blog-article-content">
+                        <div class="blog-article-meta">
+                            <span class="blog-article-date">2023年9月22日</span>
+                            <span class="blog-article-category">装备指南</span>
+                        </div>
+                        <h3>如何选择合适的高尔夫杆身：从初学者到职业选手的完整指南</h3>
+                        <p>选择合适的高尔夫杆身是提升比赛表现的关键因素。本文提供了从Club系列到Pro系列的详细选择指南，帮助您找到最适合自己挥杆风格的杆身。</p>
+                        <a href="choose-golf-shaft.html" class="read-more-btn">阅读全文 →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="../index.html" class="back-btn" style="display: block; text-align: center; margin-top: 40px;">返回首页</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>公司简介</h3>
+                    <p>UnigDesign是欧洲领先的碳纤维复合材料制造商，专注于高性能高尔夫杆身研发，为职业和业余选手提供顶级性能的杆身解决方案。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>定制服务</h3>
+                    <p>我们提供专业的定制服务，根据您的个人需求和技术特点，量身打造最适合您的高尔夫杆身解决方案。</p>
+                </div>
+                <div class="footer-column">
+                    <h3>职业机会</h3>
+                    <p>加入UnigDesign团队，与行业专家一起推动高尔夫装备技术的创新。我们提供有竞争力的薪酬和职业发展机会。</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 UnigDesign GmbH. 版权所有 | 规格数据为专业推断值，实际参数可能因具体生产批次略有差异</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
