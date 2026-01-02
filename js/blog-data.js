@@ -78,8 +78,57 @@ const blogArticles = [
                 <li><strong>球场测试：</strong>在实际球场条件下测试表现，确保杆身在各种情况下都能提供稳定性能</li>
             </ol>
         `
-    }
+    },
+// js/blog-data.js 中的示例文章
+{
+    id: 3,
+    title: "高尔夫挥杆生物力学分析",
+    slug: "golf-swing-biomechanics",
+    date: "2024-01-20",
+    category: "技术解析",
+    excerpt: "通过生物力学分析优化高尔夫挥杆动作，提升击球效率与一致性。",
+    image: "../images/main.jpg",  // 文章特色图
+    content: `
+        <h2>引言</h2>
+        <p>挥杆是高尔夫运动的核心技术，通过生物力学分析可以深入了解挥杆动作的各个方面。</p>
+        
+        <div class="article-image">
+            <img src="../images/amt1.webp" alt="上杆分析" 
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+            <p class="image-caption">图2：上杆角度与肩部旋转关系</p>
+        </div>
+        
+        <h3>1. 上杆阶段</h3>
+        <p>上杆阶段是能量储存的关键时期。通过高速摄影分析，我们可以看到职业选手的上杆轨迹。</p>
+        
+        <div class="article-image">
+            <img src="../images/amt1.webp" alt="上杆分析">
+            <p class="image-caption">图2：上杆角度与肩部旋转关系</p>
+        </div>
+        
+        <h3>2. 下杆与加速</h3>
+        <p>下杆阶段是能量释放的过程。合理的下杆顺序能最大化击球力量。</p>
+
+        <div class="article-image">
+            <img src="../images/energy.webp" alt="上杆分析" 
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+            <p class="image-caption">图2：上杆角度与肩部旋转关系</p>
+        </div>
+        
+        <h3>3. 击球瞬间</h3>
+        <p>击球瞬间是杆头速度最快的时刻，也是决定击球质量的关键。</p>
+        
+        <div class="article-image">
+            <img src="../images/pro.webp" alt="击球分析">
+            <p class="image-caption">图4：击球瞬间杆面角度与路径</p>
+        </div>
+        
+        <h2>总结</h2>
+        <p>通过科学的生物力学分析，选手可以优化挥杆动作，提升击球效率与一致性。</p>
+    `
+}
 ];
+
 
 // 按日期排序（最新的在前）- 使用新的日期格式
 blogArticles.sort((a, b) => {
