@@ -1,17 +1,18 @@
-/* css/styles.css - 主样式文件 */
+/* css/styles.css - Main stylesheet for UnigDesign Golf Shafts */
 
-/* 基础样式重置 */
+/* Base styles reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 a {
@@ -25,7 +26,7 @@ a {
     padding: 0 20px;
 }
 
-/* 头部导航 */
+/* Header navigation */
 header {
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
@@ -45,18 +46,20 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo-img {
     height: 50px;
     width: auto;
+    display: block;
 }
 
 .logo-text {
     font-size: 24px;
     font-weight: 700;
     color: #1a1a1a;
-    margin-left: 10px;
+    line-height: 1.2;
 }
 
 .logo-accent {
@@ -97,14 +100,19 @@ nav ul li a:hover:after {
     width: 100%;
 }
 
-/* 主横幅 */
+/* Hero banner with WebP fallback */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main.webp') no-repeat center center/cover;
     height: 85vh;
     display: flex;
     align-items: center;
     color: white;
     text-align: left;
+}
+
+/* JPEG fallback for browsers that don't support WebP */
+.no-webp .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main.jpg') no-repeat center center/cover;
 }
 
 .hero-content {
@@ -151,7 +159,7 @@ nav ul li a:hover:after {
     color: #2a7a2a;
 }
 
-/* 关于我们 */
+/* About us section */
 .about {
     padding: 100px 0;
     background-color: #f8f8f8;
@@ -178,12 +186,14 @@ nav ul li a:hover:after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .section-title {
     margin-bottom: 30px;
 }
 
+.section-title h1,
 .section-title h2 {
     font-size: 2.5rem;
     color: #1a1a1a;
@@ -193,9 +203,10 @@ nav ul li a:hover:after {
 .section-title p {
     color: #666;
     max-width: 500px;
+    line-height: 1.5;
 }
 
-/* 产品介绍 */
+/* Product features */
 .features {
     padding: 100px 0;
 }
@@ -265,7 +276,7 @@ nav ul li a:hover:after {
     font-size: 1.4rem;
 }
 
-/* 技术规格 */
+/* Technical specifications */
 .specs {
     padding: 100px 0;
     background-color: #f8f8f8;
@@ -345,6 +356,7 @@ nav ul li a:hover:after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .spec-button-container {
@@ -352,7 +364,7 @@ nav ul li a:hover:after {
     text-align: center;
 }
 
-/* 完整规格表页面 */
+/* Full specifications page */
 .full-specs-page {
     padding: 100px 0;
     background-color: #f8f8f8;
@@ -394,6 +406,7 @@ nav ul li a:hover:after {
 .series-subtitle {
     color: #666;
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 .series-price {
@@ -495,6 +508,7 @@ nav ul li a:hover:after {
 .tech-item p {
     color: #666;
     font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .back-btn {
@@ -506,13 +520,14 @@ nav ul li a:hover:after {
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .back-btn:hover {
     background-color: #2a7a2a;
 }
 
-/* 适用人群 */
+/* Applications section */
 .applications {
     padding: 100px 0;
 }
@@ -543,6 +558,11 @@ nav ul li a:hover:after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.app-card:hover .app-image img {
+    transform: scale(1.05);
 }
 
 .app-content {
@@ -551,9 +571,15 @@ nav ul li a:hover:after {
 
 .app-content h3 {
     margin-bottom: 15px;
+    font-size: 1.4rem;
 }
 
-/* 页脚 */
+.app-content p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer */
 footer {
     background-color: #111;
     color: #aaa;
@@ -586,7 +612,40 @@ footer {
     font-size: 0.9rem;
 }
 
-/* 响应式设计 */
+/* Blog article image styles */
+.article-image {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Picture element image styling */
+picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive design */
 @media (max-width: 992px) {
     .about-content, .specs-content {
         flex-direction: column;
@@ -619,6 +678,11 @@ footer {
         margin-top: 15px;
         align-self: flex-start;
     }
+    
+    .section-title h1,
+    .section-title h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -646,48 +710,49 @@ footer {
     .full-specs-list {
         grid-template-columns: 1fr;
     }
-}
-
-/* 确保article-content容器有正确的宽度限制 */
-.article-content {
-    width: 100%;
-    max-width: 100%;  /* 确保不超过父容器宽度 */
-    box-sizing: border-box; /* 包含内边距和边框在宽度内 */
-}
-
-/* 图片容器样式 - 确保不会溢出 */
-.article-image {
-    max-width: 100%;  /* 添加这行 */
-    overflow: hidden; /* 防止内容溢出 */
-    margin: 30px 0;
-    text-align: center;
-}
-
-/* 图片样式 - 添加更多限制 */
-.article-content img {
-    max-width: 100%;      /* 最大宽度不超过父容器 */
-    width: auto;          /* 宽度自适应 */
-    height: auto;         /* 高度自适应，保持宽高比 */
-    max-height: 500px;    /* 添加最大高度限制，防止图片过高 */
-    display: block;       /* 块级元素，独占一行 */
-    margin: 0 auto;       /* 水平居中 */
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* 响应式调整 - 小屏幕上进一步限制图片尺寸 */
-@media (max-width: 768px) {
-    .article-content img {
-        max-height: 300px;  /* 移动端图片高度进一步限制 */
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title h1,
+    .section-title h2 {
+        font-size: 1.8rem;
     }
 }
 
-/* 图片说明文字 */
-.image-caption {
-    font-size: 0.9rem;
-    color: #666;
-    font-style: italic;
-    margin-top: 10px;
-    text-align: center;
-    max-width: 100%;  /* 添加这行，确保说明文字也不溢出 */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .series-price {
+        font-size: 1.2rem;
+        padding: 6px 15px;
+    }
+    
+    .header-container {
+        padding: 10px 0;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+    }
 }

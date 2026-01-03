@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客 | UnigDesign</title>
+    <title>UnigDesign Blog | Golf Shaft Technology & Equipment Insights | Golf Schachten Blog</title>
+    <meta name="description" content="UnigDesign blog: Expert insights on golf shaft technology, equipment trends, and performance optimization. Learn about carbon fiber golf schachten and golf equipment.">
+    <meta name="keywords" content="UnigDesign blog, golf shaft blog, golf schachten blog, golf equipment blog, carbon fiber golf, golf technology, golf shaft technology">
+    
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="UnigDesign Blog | Golf Shaft Technology & Equipment Insights">
+    <meta property="og:description" content="Expert insights on golf shaft technology, equipment trends, and performance optimization from UnigDesign.">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://unigdesign.nl/blog/">
+    
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="nl" href="https://unigdesign.nl/blog/" />
+    <link rel="alternate" hreflang="en" href="https://unigdesign.nl/en/blog/" />
+    
+    <!-- Blog specific structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": "https://unigdesign.nl/blog/#blogpage",
+        "name": "UnigDesign Golf Shaft Blog",
+        "description": "Expert insights on golf shaft technology, equipment trends, and performance optimization",
+        "url": "https://unigdesign.nl/blog/",
+        "mainEntity": {
+            "@type": "Blog",
+            "name": "UnigDesign Golf Technology Blog",
+            "description": "Insights and analysis on golf shaft technology and equipment performance",
+            "publisher": {
+                "@type": "Organization",
+                "name": "UnigDesign",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://unigdesign.nl/images/logo1.webp"
+                }
+            }
+        },
+        "about": [
+            "Golf shafts",
+            "Carbon fiber technology",
+            "Golf equipment",
+            "Golf performance optimization"
+        ],
+        "inLanguage": "nl"
+    }
+    </script>
+    
     <link rel="stylesheet" href="../css/styles.css">
     <style>
-        /* 博客页面特定样式 */
         .blog-page {
             padding: 100px 0;
             background-color: #f8f8f8;
@@ -104,69 +150,65 @@
     </style>
 </head>
 <body>
-    <!-- 头部导航 -->
     <header>
         <div class="container header-container">
             <div class="logo">
-                <a href="../index.html">
-                    <img src="../images/logo1.jpg" alt="UnigDesign Logo" class="logo-img">
+                    <picture>
+                        <source srcset="../images/logo1.webp" type="image/webp">
+                        <source srcset="../images/logo1.jpg" type="image/jpeg">
+                        <img src="../images/logo1.jpg" alt="UnigDesign Golf Shafts Logo" class="logo-img">
+                    </picture>
                     <div class="logo-text">Unig<span class="logo-accent">Design</span></div>
-                </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html#home" class="nav-link">首页</a></li>
-                    <li><a href="../index.html#about" class="nav-link">关于我们</a></li>
-                    <li><a href="../index.html#features" class="nav-link">产品介绍</a></li>
-                    <li><a href="../index.html#specs" class="nav-link">技术规格</a></li>
-                    <li><a href="../index.html#applications" class="nav-link">适用人群</a></li>
-                    <li><a href="index.html" class="nav-link" style="color: #2a7a2a;">博客</a></li>
+                    <li><a href="../index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="../index.html#about" class="nav-link">Over Ons</a></li>
+                    <li><a href="../index.html#features" class="nav-link">Producten</a></li>
+                    <li><a href="../index.html#specs" class="nav-link">Specificaties</a></li>
+                    <li><a href="../index.html#applications" class="nav-link">Doelgroepen</a></li>
+                    <li><a href="index.html" class="nav-link" style="color: #2a7a2a;">Blog</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- 博客页面 -->
     <section class="blog-page">
         <div class="container blog-container">
             <div class="section-title" style="text-align: center;">
-                <h2>博客与见解</h2>
-                <p>探索高尔夫技术、装备趋势与专业见解</p>
+                <h1>UnigDesign Blog & Inzichten</h1>
+                <p style="max-width: 500px; margin: 0 auto;">Golftechnologie, materiaaltrends<br>en professionele inzichten</p>
             </div>
             
-            <!-- 博客文章容器 - 这里的内容将由JavaScript动态生成 -->
             <div class="blog-articles" id="blog-articles-container">
-                <!-- JavaScript会在这里插入博客文章卡片 -->
             </div>
             
-            <a href="../index.html" class="back-btn" style="display: block; text-align: center; margin-top: 40px;">返回首页</a>
+            <a href="../index.html" class="back-btn" style="display: block; text-align: center; margin-top: 40px;">Terug naar Home</a>
         </div>
     </section>
 
-    <!-- 页脚 -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>公司简介</h3>
-                    <p>UnigDesign是欧洲领先的碳纤维复合材料制造商，专注于高性能高尔夫杆身研发，为职业和业余选手提供顶级性能的杆身解决方案。</p>
+                    <h3>Over UnigDesign</h3>
+                    <p>UnigDesign is een toonaangevende Europese fabrikant van carbon composiet materialen, gespecialiseerd in high-performance golf schachten voor professionals en amateurs.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>定制服务</h3>
-                    <p>我们提供专业的定制服务，根据您的个人需求和技术特点，量身打造最适合您的高尔夫杆身解决方案。</p>
+                    <h3>Custom Fitting</h3>
+                    <p>Wij bieden professionele custom fitting diensten, afgestemd op jouw persoonlijke behoeften en technische specificaties voor de perfecte golf schacht oplossing.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>职业机会</h3>
-                    <p>加入UnigDesign团队，与行业专家一起推动高尔夫装备技术的创新。我们提供有竞争力的薪酬和职业发展机会。</p>
+                    <h3>Carrière Kansen</h3>
+                    <p>Word onderdeel van het UnigDesign team en werk samen met industrie experts aan innovatie in golf equipment. Wij bieden competitieve voorwaarden en carrière mogelijkheden.</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 UnigDesign GmbH. 版权所有 | 规格数据为专业推断值，实际参数可能因具体生产批次略有差异</p>
+                <p>&copy; 2023 UnigDesign GmbH. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
 
-    <!-- 引入博客数据文件和生成器脚本 -->
     <script src="../js/blog-data.js"></script>
     <script src="../js/blog-generator.js"></script>
     <script src="../js/main.js"></script>
