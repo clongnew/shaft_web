@@ -7,7 +7,7 @@ const blogArticles = [
         date: "2024-01-20",
         category: "Technische Diepgang",
         excerpt: "Ontdek hoe UnigDesige Europese ruimtevaart-kwaliteit koolstofvezel technologie toepast in golfschacht design, met 35% hogere torsie sterkte.",
-        image: "../images/main.webp",
+        image: "../images/bmain2.webp",
         content: `
             <h2>Introductie: De Materiaal Revolutie van Ruimte naar Golfbaan</h2>
             <p>In de brandstoftanks van Ariane-raketten en de monocoque structuren van F1-auto's wordt materiaalwetenschap toegepast die nu ook de precisiesport golf transformeert. UnigDesige brengt meer dan 20 jaar ervaring met koolstofvezel composieten uit de ruimtevaart- en auto-industrie in elke golfschacht. Dit is geen eenvoudige materiaalvervanging, maar een nieuwe uitdrukking van systeemdenken in sportuitrusting.</p>
@@ -107,7 +107,7 @@ const blogArticles = [
         date: "2024-01-15",
         category: "Uitrustings Wetenschap",
         excerpt: "Gebaseerd op 5.000 speler data-analyse: hoe wetenschappelijke meting en gepersonaliseerde fitting de optimale golfschacht voor uw swing selecteert.",
-        image: "../images/pro.webp",
+        image: "../images/bmain1.webp",
         content: `
             <h2>Herdefiniëring van Fitting: Van Ervaring naar Data-beslissingen</h2>
             <p>Golfuitrusting selectie ondergaat een fundamentele verschuiving van empirisme naar data-gestuurd. UnigDesige R&D analyseerde wereldwijd 5.000 swinggegevens van verschillende niveau spelers en ontdekte dat traditionele "op gevoel" schachtselectiemethoden 68% foutmarge hebben. Ware wetenschappelijke fitting is een gestructureerd beslissingsproces gebaseerd op precieze meting en systeemanalyse.</p>
