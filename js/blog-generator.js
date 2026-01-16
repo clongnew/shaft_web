@@ -1,4 +1,4 @@
-// js/blog-generator.js - Blog generator for UnigDesign Golf Shafts Blog
+// js/blog-generator.js - Blog generator for UnigDesige Golf Shafts Blog
 
 document.addEventListener('DOMContentLoaded', function() {
     generateBlogList();
@@ -88,7 +88,7 @@ function addBlogStructuredData(articles) {
     const blogListSchema = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "UnigDesign Golf Shafts Blog",
+        "name": "UnigDesige Golf Shafts Blog",
         "description": "Expert inzichten over golf schacht technologie, equipment trends en prestatie optimalisatie",
         "url": window.location.href,
         "mainEntity": {
@@ -106,7 +106,7 @@ function addBlogStructuredData(articles) {
                     "dateModified": article.date,
                     "author": {
                         "@type": "Organization",
-                        "name": "UnigDesign"
+                        "name": "UnigDesige"
                     }
                 }
             }))

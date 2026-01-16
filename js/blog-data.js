@@ -1,7 +1,7 @@
 // js/blog-data.js
 const blogArticles = [
     {
-        id: 1,
+        id: 2,
         title: "Hoe Ruimtevaart-Koolstofvezel Technologie Golfschacht Prestaties Hervormt",
         slug: "aerospace-carbon-fiber-golf-shaft-technology",
         date: "2024-01-20",
@@ -48,32 +48,42 @@ const blogArticles = [
             <h2>Prestatie Validatie: Data-gedreven Design Optimalisatie</h2>
             <p>Samenwerking met 5 Europese PGA Tour spelers leverde meer dan 15.000 slaggegevens op voor analyse:</p>
             
-            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
-                <tr style="background-color: #f8f8f8;">
-                    <th style="border:1px solid #ddd; padding:8px;">Prestatie Indicator</th>
-                    <th style="border:1px solid #ddd; padding:8px;">UnigDesige 1K Carbon Schacht</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Traditionele Schacht</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Verbetering</th>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Gemiddelde slagafstand</td>
-                    <td style="border:1px solid #ddd; padding:8px;">+8-12 yards</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Basislijn</td>
-                    <td style="border:1px solid #ddd; padding:8px;">+6.5%</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Landingsspreiding (standaard deviatie)</td>
-                    <td style="border:1px solid #ddd; padding:8px;">±4.2 yards</td>
-                    <td style="border:1px solid #ddd; padding:8px;">±5.8 yards</td>
-                    <td style="border:1px solid #ddd; padding:8px;">-27.6%</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Torsie Stabiliteit</td>
-                    <td style="border:1px solid #ddd; padding:8px;">3.1°±0.2°</td>
-                    <td style="border:1px solid #ddd; padding:8px;">3.4°±0.4°</td>
-                    <td style="border:1px solid #ddd; padding:8px;">+35%</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <div class="table-title">Prestatie Vergelijking: UnigDesige vs. Traditionele Schachten</div>
+                <div class="table-scroll-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Prestatie Indicator</th>
+                                <th>UnigDesige 1K Carbon Schacht</th>
+                                <th>Traditionele Schacht</th>
+                                <th>Verbetering</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Prestatie Indicator">Gemiddelde slagafstand</td>
+                                <td data-label="UnigDesige">+8-12 yards</td>
+                                <td data-label="Traditioneel">Basislijn</td>
+                                <td data-label="Verbetering">+6.5%</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Prestatie Indicator">Landingsspreiding (standaard deviatie)</td>
+                                <td data-label="UnigDesige">±4.2 yards</td>
+                                <td data-label="Traditioneel">±5.8 yards</td>
+                                <td data-label="Verbetering">-27.6%</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td data-label="Prestatie Indicator">Torsie Stabiliteit</td>
+                                <td data-label="UnigDesige">3.1°±0.2°</td>
+                                <td data-label="Traditioneel">3.4°±0.4°</td>
+                                <td data-label="Verbetering">+35%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-caption">Tabel 1: Prestatievergelijking gebaseerd op analyse van 15.000 slagen met 5 Europese PGA Tour spelers</div>
+            </div>
             
             <h2>Conclusie: Hervorming van Prestatienormen</h2>
             <p>Ruimtevaart-kwaliteit koolstofvezel technologie brengt driedimensionale innovatie in golfschachten: preciezere materiaalcontrole, intelligentere structuurontwerpen, en stabielere prestatie-output. De engineering filosofie van UnigDesige stelt dat ware hoge prestaties niet draaien om extreme data, maar om voorspelbare, herhaalbare fysieke respons bij elke swing. Dit is niet alleen een overwinning voor materiaalwetenschap, maar perfecte toepassing van engineering denken in sportuitrusting.</p>
@@ -91,7 +101,7 @@ const blogArticles = [
         `
     },
     {
-        id: 2,
+        id: 1,
         title: "Van Data Analyse naar Schacht Selectie: Complete Gids voor Wetenschappelijke Golfuitrusting Fitting",
         slug: "data-driven-golf-shaft-fitting-guide",
         date: "2024-01-15",
@@ -107,32 +117,42 @@ const blogArticles = [
             <h3>1. Swing Snelheid: Meer dan een Getal, een Efficiëntie Indicator</h3>
             <p>Swing snelheid beïnvloedt direct schachtstijfheid, maar traditionele classificatie is te simplistisch:</p>
             
-            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
-                <tr style="background-color: #f8f8f8;">
-                    <th style="border:1px solid #ddd; padding:8px;">Swing Snelheid (mph)</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Aanbevolen Schacht Stijfheid</th>
-                    <th style="border:1px solid #ddd; padding:8px;">UnigDesige Serie</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Technische Kenmerken</th>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">70-80</td>
-                    <td style="border:1px solid #ddd; padding:8px;">R / SR</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Club-serie 40R</td>
-                    <td style="border:1px solid #ddd; padding:8px;">3.6° torsie, mid-hoog flex punt, maximaliseert vergevingsgezindheid</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">85-95</td>
-                    <td style="border:1px solid #ddd; padding:8px;">S / X</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Advanced-serie 50S</td>
-                    <td style="border:1px solid #ddd; padding:8px;">3.2° torsie, gebalanceerde prestaties en controle</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">100-110</td>
-                    <td style="border:1px solid #ddd; padding:8px;">X / TX</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Pro-serie 60X</td>
-                    <td style="border:1px solid #ddd; padding:8px;">2.9° torsie, voorzijde flex punt, ultieme controle</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <div class="table-title">Swing Snelheid Matching Tabel</div>
+                <div class="table-scroll-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Swing Snelheid (mph)</th>
+                                <th>Aanbevolen Schacht Stijfheid</th>
+                                <th>UnigDesige Serie</th>
+                                <th>Technische Kenmerken</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Swing Snelheid">70-80</td>
+                                <td data-label="Stijfheid" data-series="club">R / SR</td>
+                                <td data-label="Serie">Club-serie 40R</td>
+                                <td data-label="Kenmerken">3.6° torsie, mid-hoog flex punt, maximaliseert vergevingsgezindheid</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Swing Snelheid">85-95</td>
+                                <td data-label="Stijfheid" data-series="advanced">S / X</td>
+                                <td data-label="Serie">Advanced-serie 50S</td>
+                                <td data-label="Kenmerken">3.2° torsie, gebalanceerde prestaties en controle</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td data-label="Swing Snelheid">100-110</td>
+                                <td data-label="Stijfheid" data-series="pro">X / TX</td>
+                                <td data-label="Serie">Pro-serie 60X</td>
+                                <td data-label="Kenmerken">2.9° torsie, voorzijde flex punt, ultieme controle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-caption">Tabel 1: Swing snelheid aanbevelingen gebaseerd op UnigDesige testdata en 5.000 speler analyses</div>
+            </div>
             
             <h3>2. Swing Tempo: De Verwaarloosde Factor</h3>
             <p>Tempo is de tijdverhouding van backswing top tot impact, beïnvloedt direct schachtgewicht:</p>
@@ -146,43 +166,53 @@ const blogArticles = [
             <h3>3. Release Type: Bepaalt Flex Punt Selectie</h3>
             <p>Release punt is het moment tijdens downswing waar de polsen beginnen te releasen, bepaalt schacht flex punt positie:</p>
             
-            <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
-                <tr style="background-color: #f8f8f8;">
-                    <th style="border:1px solid #ddd; padding:8px;">Release Type</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Beschrijving</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Aanbevolen Flex Punt</th>
-                    <th style="border:1px solid #ddd; padding:8px;">UnigDesige Serie Match</th>
-                    <th style="border:1px solid #ddd; padding:8px;">Prestatie Voordeel</th>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Vroege Release</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Polsen releasen vroeg in downswing, clubhoofd snelheid piekt voor impact</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Hoog Flex Punt</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Club-serie 40R/L<br>Advanced-serie 50SR</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Hogere baan, meer vergevingsgezindheid, betere controle voor beginners</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Middel Release</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Polsen releasen op optimaal moment, meest voorkomende release type</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Midden-Hoog Flex Punt</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Advanced-serie 50S/55S<br>Pro-serie 50X</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Gebalanceerde baanhoogte, optimale controle en afstand, voor gevorderde spelers</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Late Release</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Polsen releasen laat, vlak voor of tijdens impact, maximale clubhoofd snelheid</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Lage/Voorzijde Flex Punt</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Pro-serie 60X/70X/70TX/85X</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Lagere baan, maximale controle, optimaal voor krachtige swingers en professionals</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Zeer Late Release</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Polsen releasen extreem laat, kenmerk van elite spelers, maximale energieoverdracht</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Zeer Lage Flex Punt</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Pro-serie 70TX/85X</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Extreme controle, lage baan, maximale energieoverdracht voor elite spelers</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <div class="table-title">Release Type Matching Tabel</div>
+                <div class="table-scroll-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Release Type</th>
+                                <th>Beschrijving</th>
+                                <th>Aanbevolen Flex Punt</th>
+                                <th>UnigDesige Serie Match</th>
+                                <th>Prestatie Voordeel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Release Type">Vroege Release</td>
+                                <td data-label="Beschrijving">Polsen releasen vroeg in downswing, clubhoofd snelheid piekt voor impact</td>
+                                <td data-label="Flex Punt">Hoog Flex Punt</td>
+                                <td data-label="Serie Match">Club-serie 40R/L<br>Advanced-serie 50SR</td>
+                                <td data-label="Voordeel">Hogere baan, meer vergevingsgezindheid, betere controle voor beginners</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Release Type">Middel Release</td>
+                                <td data-label="Beschrijving">Polsen releasen op optimaal moment, meest voorkomende release type</td>
+                                <td data-label="Flex Punt">Midden-Hoog Flex Punt</td>
+                                <td data-label="Serie Match">Advanced-serie 50S/55S<br>Pro-serie 50X</td>
+                                <td data-label="Voordeel">Gebalanceerde baanhoogte, optimale controle en afstand, voor gevorderde spelers</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Release Type">Late Release</td>
+                                <td data-label="Beschrijving">Polsen releasen laat, vlak voor of tijdens impact, maximale clubhoofd snelheid</td>
+                                <td data-label="Flex Punt">Lage/Voorzijde Flex Punt</td>
+                                <td data-label="Serie Match">Pro-serie 60X/70X/70TX/85X</td>
+                                <td data-label="Voordeel">Lagere baan, maximale controle, optimaal voor krachtige swingers en professionals</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td data-label="Release Type">Zeer Late Release</td>
+                                <td data-label="Beschrijving">Polsen releasen extreem laat, kenmerk van elite spelers, maximale energieoverdracht</td>
+                                <td data-label="Flex Punt">Zeer Lage Flex Punt</td>
+                                <td data-label="Serie Match">Pro-serie 70TX/85X</td>
+                                <td data-label="Voordeel">Extreme controle, lage baan, maximale energieoverdracht voor elite spelers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-caption">Tabel 2: Release type matching met flex punt en UnigDesige product series - Gebaseerd op professionele fitting data</div>
+            </div>
             
             <h2>Speler Profielen: Precisie Fitting van Beginner tot Pro</h2>
             
@@ -280,7 +310,6 @@ const blogArticles = [
     }
 ];
 
-// Sorteer op datum (nieuwste eerst)
 blogArticles.sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
 });

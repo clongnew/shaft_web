@@ -1,4 +1,4 @@
-// js/main.js - Main JavaScript file for UnigDesign Golf Shafts
+// js/main.js - Main JavaScript file for UnigDesige Golf Shafts
 
 // Detect WebP support for optimized image loading
 function checkWebPSupport() {
@@ -153,7 +153,7 @@ function initStructuredData() {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "UnigDesign Golf Shafts",
+        "name": "UnigDesige Golf Shafts",
         "url": window.location.origin,
         "potentialAction": {
             "@type": "SearchAction",

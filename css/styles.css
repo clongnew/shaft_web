@@ -1,4 +1,4 @@
-/* css/styles.css - Main stylesheet for UnigDesign Golf Shafts */
+/* css/styles.css - Main stylesheet for UnigDesige Golf Shafts */
 
 /* Base styles reset */
 * {
@@ -645,7 +645,7 @@ picture img {
     margin: 0 auto;
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 992px) {
     .about-content, .specs-content {
         flex-direction: column;
@@ -755,4 +755,301 @@ picture img {
     .logo-text {
         font-size: 20px;
     }
+}
+
+/* Blog Article Table Styles */
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    font-family: inherit;
+    min-width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.article-content thead tr {
+    background-color: #2a7a2a;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+}
+
+.article-content th {
+    padding: 15px 12px;
+    font-weight: 600;
+    border: none;
+    position: relative;
+}
+
+.article-content tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease;
+}
+
+.article-content tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.article-content tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.article-content tbody tr:hover {
+    background-color: #f0f7f0;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.article-content td {
+    padding: 14px 12px;
+    border: none;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.article-content tbody tr:last-of-type {
+    border-bottom: 2px solid #2a7a2a;
+}
+
+.article-content tbody tr.highlight {
+    background-color: #e8f5e8;
+    font-weight: 500;
+}
+
+.article-content tbody tr.highlight:hover {
+    background-color: #d8f0d8;
+}
+
+.article-content td[data-series="club"] {
+    border-left: 4px solid #2a9d8f;
+    padding-left: 8px;
+}
+
+.article-content td[data-series="advanced"] {
+    border-left: 4px solid #0060a3;
+    padding-left: 8px;
+}
+
+.article-content td[data-series="pro"] {
+    border-left: 4px solid #e63946;
+    padding-left: 8px;
+}
+
+.article-content table a {
+    color: #2a7a2a;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dotted transparent;
+    transition: all 0.2s;
+}
+
+.article-content table a:hover {
+    color: #1f5f1f;
+    border-bottom: 1px dotted #2a7a2a;
+}
+
+.article-content table ul,
+.article-content table ol {
+    margin: 5px 0 5px 15px;
+    padding-left: 0;
+}
+
+.article-content table li {
+    margin-bottom: 3px;
+    line-height: 1.4;
+}
+
+.article-content table code {
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #e63946;
+}
+
+.article-content table .table-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #2a7a2a;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.article-content table .table-btn:hover {
+    background-color: #1f5f1f;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 20px -10px;
+        border-radius: 0;
+        box-shadow: none;
+        border: 1px solid #f0f0f0;
+    }
+    
+    .article-content table thead {
+        display: none;
+    }
+    
+    .article-content table tbody,
+    .article-content table tr,
+    .article-content table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .article-content table tr {
+        margin-bottom: 15px;
+        border: 1px solid #f0f0f0;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    
+    .article-content table td {
+        padding: 12px 10px;
+        text-align: right;
+        position: relative;
+        border-bottom: 1px solid #f8f8f8;
+    }
+    
+    .article-content table td:last-child {
+        border-bottom: none;
+    }
+    
+    .article-content table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-weight: 600;
+        color: #2a7a2a;
+        text-align: left;
+    }
+    
+    .article-content table td[data-label] {
+        padding-left: 40%;
+    }
+    
+    .article-content table td:empty {
+        display: none;
+    }
+    
+    .article-content tbody tr:nth-of-type(even),
+    .article-content tbody tr:nth-of-type(odd) {
+        background-color: white;
+    }
+    
+    .article-content tbody tr:hover {
+        background-color: #f9f9f9;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+@media print {
+    .article-content table {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .article-content thead tr {
+        background-color: #f8f8f8 !important;
+        color: #000;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .article-content tbody tr {
+        break-inside: avoid;
+    }
+    
+    .article-content table a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    .article-content table a:after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        color: #666;
+    }
+}
+
+@keyframes tableRowAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.article-content tbody tr {
+    animation: tableRowAppear 0.3s ease forwards;
+}
+
+.article-content tbody tr:nth-child(1) { animation-delay: 0.05s; }
+.article-content tbody tr:nth-child(2) { animation-delay: 0.1s; }
+.article-content tbody tr:nth-child(3) { animation-delay: 0.15s; }
+.article-content tbody tr:nth-child(4) { animation-delay: 0.2s; }
+.article-content tbody tr:nth-child(5) { animation-delay: 0.25s; }
+.article-content tbody tr:nth-child(6) { animation-delay: 0.3s; }
+.article-content tbody tr:nth-child(7) { animation-delay: 0.35s; }
+.article-content tbody tr:nth-child(8) { animation-delay: 0.4s; }
+.article-content tbody tr:nth-child(9) { animation-delay: 0.45s; }
+.article-content tbody tr:nth-child(10) { animation-delay: 0.5s; }
+
+.table-container {
+    position: relative;
+    margin: 25px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.table-scroll-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+.table-title {
+    background-color: #2a7a2a;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+}
+
+.table-caption {
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    font-style: italic;
+}
+
+.table-footer {
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    font-size: 0.85rem;
+    color: #666;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
 }
