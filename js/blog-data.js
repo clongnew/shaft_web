@@ -7,7 +7,7 @@ const blogArticles = [
         date: "2024-01-20",
         category: "Technische Diepgang",
         excerpt: "Ontdek hoe UnigDesige Europese ruimtevaart-kwaliteit koolstofvezel technologie toepast in golfschacht design, met 35% hogere torsie sterkte.",
-        image: "../images/bmain2.webp",
+        image: "../images/bmain2x.webp",
         content: `
             <h2>Introductie: De Materiaal Revolutie van Ruimte naar Golfbaan</h2>
             <p>In de brandstoftanks van Ariane-raketten en de monocoque structuren van F1-auto's wordt materiaalwetenschap toegepast die nu ook de precisiesport golf transformeert. UnigDesige brengt meer dan 20 jaar ervaring met koolstofvezel composieten uit de ruimtevaart- en auto-industrie in elke golfschacht. Dit is geen eenvoudige materiaalvervanging, maar een nieuwe uitdrukking van systeemdenken in sportuitrusting.</p>

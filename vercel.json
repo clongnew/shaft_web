@@ -22,31 +22,9 @@
         "use": "@vercel/static"
       }
     ],
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/index.html"
-      },
-      {
-        "src": "/specs",
-        "dest": "/specs.html"
-      },
-      {
-        "src": "/blog",
-        "dest": "/blog/index.html"
-      },
-      {
-        "src": "/blog/article",
-        "dest": "/blog/article.html"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ],
     "headers": [
       {
-        "source": "/.*",
+        "source": "/(.*)\\.(jpg|jpeg|png|gif|ico|webp|svg|css|js)",
         "headers": [
           {
             "key": "Cache-Control",
@@ -54,5 +32,32 @@
           }
         ]
       }
-    ]
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/specs",
+        "destination": "/specs.html"
+      },
+      {
+        "source": "/blog",
+        "destination": "/blog/index.html"
+      },
+      {
+        "source": "/blog/article",
+        "destination": "/blog/article.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "trailingSlash": false,
+    "cleanUrls": true
   }
