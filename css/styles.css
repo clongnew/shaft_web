@@ -102,7 +102,7 @@ nav ul li a:hover:after {
 
 /* Hero banner with WebP fallback */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main.webp') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main1.webp') no-repeat center center/cover;
     height: 85vh;
     display: flex;
     align-items: center;
@@ -112,7 +112,7 @@ nav ul li a:hover:after {
 
 /* JPEG fallback for browsers that don't support WebP */
 .no-webp .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/main1.jpg') no-repeat center center/cover;
 }
 
 .hero-content {
