@@ -44,7 +44,7 @@ function generateBlogList() {
                     </div>
                     <h3 itemprop="headline">${article.title}</h3>
                     <p itemprop="description">${article.excerpt}</p>
-                    <a href="article.html?id=${article.id}" class="read-more-btn" itemprop="url" 
+                    <a href="blog/article.html?id=${article.id}" class="read-more-btn" itemprop="url" 
                        aria-label="Lees het volledige artikel: ${article.title}">
                         Lees volledig artikel →
                     </a>
