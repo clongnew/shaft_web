@@ -46,7 +46,7 @@ const blogArticles = [
             </ol>
             
             <h2>Prestatie Validatie: Data-gedreven Design Optimalisatie</h2>
-            <p>Samenwerking met 5 Europese PGA Tour spelers leverde meer dan 15.000 slaggegevens op voor analyse:</p>
+            <p>Samenwerking met 5 Europese PGA Tour spelers leverde meer dan 5.000 slaggegevens op voor analyse:</p>
             
             <div class="table-container">
                 <div class="table-title">Prestatie Vergelijking: UnigDesige vs. Traditionele Schachten</div>
@@ -82,7 +82,7 @@ const blogArticles = [
                         </tbody>
                     </table>
                 </div>
-                <div class="table-caption">Tabel 1: Prestatievergelijking gebaseerd op analyse van 15.000 slagen met 5 Europese PGA Tour spelers</div>
+                <div class="table-caption">Tabel 1: Prestatievergelijking gebaseerd op analyse van 5.000 slagen met 5 Europese PGA Tour spelers</div>
             </div>
             
             <h2>Conclusie: Hervorming van Prestatienormen</h2>
@@ -106,11 +106,11 @@ const blogArticles = [
         slug: "data-driven-golf-shaft-fitting-guide",
         date: "2024-01-15",
         category: "Uitrustings Wetenschap",
-        excerpt: "Gebaseerd op 5.000 speler data-analyse: hoe wetenschappelijke meting en gepersonaliseerde fitting de optimale golfschacht voor uw swing selecteert.",
+        excerpt: "Gebaseerd op 5.00 speler data-analyse: hoe wetenschappelijke meting en gepersonaliseerde fitting de optimale golfschacht voor uw swing selecteert.",
         image: "../images/bmain1.webp",
         content: `
             <h2>Herdefiniëring van Fitting: Van Ervaring naar Data-beslissingen</h2>
-            <p>Golfuitrusting selectie ondergaat een fundamentele verschuiving van empirisme naar data-gestuurd. UnigDesige R&D analyseerde wereldwijd 5.000 swinggegevens van verschillende niveau spelers en ontdekte dat traditionele "op gevoel" schachtselectiemethoden 68% foutmarge hebben. Ware wetenschappelijke fitting is een gestructureerd beslissingsproces gebaseerd op precieze meting en systeemanalyse.</p>
+            <p>Golfuitrusting selectie ondergaat een fundamentele verschuiving van empirisme naar data-gestuurd. UnigDesige R&D analyseerde wereldwijd 1.000 swinggegevens van verschillende niveau spelers en ontdekte dat traditionele "op gevoel" schachtselectiemethoden 68% foutmarge hebben. Ware wetenschappelijke fitting is een gestructureerd beslissingsproces gebaseerd op precieze meting en systeemanalyse.</p>
             
             <h2>Kritieke Parameter Analyse: Voorbij Stijfheid</h2>
             
@@ -151,7 +151,7 @@ const blogArticles = [
                         </tbody>
                     </table>
                 </div>
-                <div class="table-caption">Tabel 1: Swing snelheid aanbevelingen gebaseerd op UnigDesige testdata en 5.000 speler analyses</div>
+                <div class="table-caption">Tabel 1: Swing snelheid aanbevelingen gebaseerd op UnigDesige testdata en 1.000 speler analyses</div>
             </div>
             
             <h3>2. Swing Tempo: De Verwaarloosde Factor</h3>
