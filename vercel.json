@@ -34,22 +34,30 @@
       }
     ],
     "rewrites": [
-      {
+    {
         "source": "/",
         "destination": "/index.html"
-      },
-      {
+    },
+    {
         "source": "/specs",
         "destination": "/specs.html"
-      },
-      {
+    },
+    {
         "source": "/blog",
         "destination": "/blog/index.html"
-      },
-      {
+    },
+    {
         "source": "/blog/article",
         "destination": "/blog/article.html"
-      }
+    },
+    {
+        "source": "/article",
+        "destination": "/blog/article.html"
+    },
+    {
+        "source": "/article/:id",
+        "destination": "/blog/article.html"
+    }
     ],
     "redirects": [
       {
