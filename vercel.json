@@ -37,13 +37,6 @@
         "destination": "/blog/article.html"
     }
     ],
-    "redirects": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html",
-        "statusCode": 200
-      }
-    ],
     "trailingSlash": false,
     "cleanUrls": true
   }
