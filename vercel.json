@@ -11,6 +11,7 @@
         ]
       }
     ],
+    
     "rewrites": [
     {
         "source": "/",
@@ -37,6 +38,13 @@
         "destination": "/blog/article.html"
     }
     ],
+    "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.unigdesige.nl",
+      "permanent": true
+    }
+  ],
     "trailingSlash": false,
     "cleanUrls": true
   }
