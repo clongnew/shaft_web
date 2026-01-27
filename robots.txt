@@ -1,0 +1,48 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /css/
+Allow: /images/
+Allow: /js/
+
+Disallow: /css/*.map$
+Disallow: /js/*.map$
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /*.tmp$
+Disallow: /*.bak$
+
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /*sessionid=
+Disallow: /*PHPSESSID=
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /css/
+
+User-agent: Bingbot
+Allow: /images/
+Allow: /css/
+
+Sitemap: https://unigdesige.nl/sitemap.xml
+
+Crawl-delay: 1
+
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Crawl-delay: 5
