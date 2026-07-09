@@ -26,6 +26,10 @@
         "destination": "/blog/index.html"
     },
     {
+        "source": "/faq",
+        "destination": "/faq.html"
+    },
+    {
         "source": "/blog/article",
         "destination": "/blog/article.html"
     },

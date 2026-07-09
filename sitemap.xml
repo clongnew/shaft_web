@@ -26,6 +26,14 @@
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/" />
     </url>
+
+    <url>
+        <loc>https://unigdesige.nl/faq.html</loc>
+        <lastmod>2026-07-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/faq.html" />
+    </url>
     
     <url>
         <loc>https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology.html</loc>

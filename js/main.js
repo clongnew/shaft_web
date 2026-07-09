@@ -64,6 +64,9 @@ function setCurrentPageHighlight() {
         if (currentPage.includes('specs.html') && (itemHref === 'specs.html' || itemHref === './specs.html')) {
             item.style.color = '#2a7a2a';
             item.style.fontWeight = '600';
+        } else if (currentPage.includes('faq.html') && (itemHref === 'faq.html' || itemHref === './faq.html' || itemHref === '../faq.html')) {
+            item.style.color = '#2a7a2a';
+            item.style.fontWeight = '600';
         } else if (currentPage.includes('blog/') && (itemHref === 'blog/index.html' || itemHref === './blog/index.html' || itemHref === 'index.html')) {
             item.style.color = '#2a7a2a';
             item.style.fontWeight = '600';

@@ -428,6 +428,114 @@ nav ul li a:hover:after {
     text-align: center;
 }
 
+/* FAQ page */
+.faq-hero {
+    padding: 90px 0 70px;
+    background-color: #f8f8f8;
+}
+
+.faq-hero-content {
+    max-width: 1000px;
+}
+
+.faq-hero .section-title {
+    text-align: center;
+}
+
+.faq-hero .section-title p {
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+.faq-hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.faq-benefit {
+    background-color: white;
+    border-left: 4px solid #2a7a2a;
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.faq-benefit h2 {
+    color: #2a7a2a;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.faq-benefit p {
+    color: #555;
+}
+
+.faq-page {
+    padding: 80px 0 100px;
+    background-color: white;
+}
+
+.faq-container {
+    max-width: 920px;
+}
+
+.faq-item {
+    padding: 28px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.faq-item:first-child {
+    border-top: 1px solid #e8e8e8;
+}
+
+.faq-item h2 {
+    color: #1a1a1a;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.faq-item-featured {
+    background-color: #f8f8f8;
+    border: 1px solid #e6efe6;
+    border-left: 4px solid #2a7a2a;
+    border-radius: 8px;
+    padding: 28px;
+    margin: 18px 0;
+}
+
+.faq-item-featured + .faq-item {
+    border-top: none;
+}
+
+.faq-cta {
+    margin-top: 45px;
+    padding: 34px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.faq-cta h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.faq-cta p {
+    color: #d7d7d7;
+    margin: 0 auto 22px;
+    max-width: 620px;
+}
+
 /* Full specifications page */
 .full-specs-page {
     padding: 100px 0;
@@ -833,6 +941,18 @@ picture img {
 
     .article-featured-image {
         height: 300px;
+    }
+
+    .faq-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-hero {
+        padding: 70px 0 50px;
+    }
+
+    .faq-page {
+        padding: 60px 0 80px;
     }
     
     .hero h1 {
