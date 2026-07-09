@@ -4,7 +4,7 @@
     
     <url>
         <loc>https://unigdesige.nl/</loc>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/" />
@@ -13,7 +13,7 @@
     
     <url>
         <loc>https://unigdesige.nl/specs.html</loc>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/specs.html" />
@@ -21,59 +21,26 @@
     
     <url>
         <loc>https://unigdesige.nl/blog/</loc>
-        <lastmod>2026-01-27</lastmod>
+        <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/" />
     </url>
     
     <url>
-        <loc>https://unigdesige.nl/blog/article.html</loc>
-        <lastmod>2026-01-27</lastmod>
+        <loc>https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology.html</loc>
+        <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology.html" />
     </url>
-    
+
     <url>
-        <loc>https://unigdesige.nl/index.html#home</loc>
-        <lastmod>2026-01-27</lastmod>
+        <loc>https://unigdesige.nl/blog/data-driven-golf-shaft-fitting-guide.html</loc>
+        <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://unigdesige.nl/index.html#about</loc>
-        <lastmod>2026-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://unigdesige.nl/index.html#features</loc>
-        <lastmod>2026-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://unigdesige.nl/index.html#specs</loc>
-        <lastmod>2026-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://unigdesige.nl/index.html#applications</loc>
-        <lastmod>2026-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-        <loc>https://unigdesige.nl/index.html#contact</loc>
-        <lastmod>2026-01-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/data-driven-golf-shaft-fitting-guide.html" />
     </url>
 
 </urlset>

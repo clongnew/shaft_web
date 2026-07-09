@@ -154,12 +154,11 @@ function initStructuredData() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "UnigDesige Golf Shafts",
-        "url": window.location.origin,
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": `${window.location.origin}/search?q={search_term_string}`,
-            "query-input": "required name=search_term_string"
-        }
+        "alternateName": [
+            "UnigDesige 高尔夫杆身",
+            "1K全碳高尔夫杆身"
+        ],
+        "url": window.location.origin
     };
     
     const script = document.createElement('script');

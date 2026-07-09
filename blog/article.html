@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnigDesige Blog Artikel | Golf Shaft Technology & Insights</title>
     <meta name="description" content="Lees uitgebreide artikelen over golf shaft technologie, materiaalinnovatie en prestaties. UnigDesige blog voor serieuze golfers en professionals.">
+    <meta name="robots" content="noindex,follow">
     <meta name="keywords" content="UnigDesige blog artikel, golf shaft artikel, golf schachten technologie, carbon fiber golf, golf equipment technologie">
     
     <!-- Open Graph tags for social media -->
@@ -171,7 +172,7 @@
                     <picture>
                         <source srcset="../images/logo1.webp" type="image/webp">
                         <source srcset="../images/logo1.jpg" type="image/jpeg">
-                        <img src="images/logo1.jpg" alt="UnigDesige Logo", class="logo-img">
+                        <img src="../images/logo1.jpg" alt="UnigDesige Logo", class="logo-img">
                     </picture>
                     <div class="logo-text">Unig<span class="logo-accent">Desige</span></div>
             </div>
@@ -251,6 +252,11 @@
             
             if (!article) {
                 window.location.href = 'index.html';
+                return;
+            }
+
+            if (article.slug) {
+                window.location.replace(`${article.slug}.html`);
                 return;
             }
             

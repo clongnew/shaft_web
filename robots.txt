@@ -18,8 +18,6 @@ Disallow: /backup/
 Disallow: /*.tmp$
 Disallow: /*.bak$
 
-Disallow: /*?*
-Disallow: /*&*
 Disallow: /*sessionid=
 Disallow: /*PHPSESSID=
 Disallow: /*utm_source=
