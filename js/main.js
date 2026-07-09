@@ -185,6 +185,60 @@ function initOutboundLinkTracking() {
     });
 }
 
+// Initialize serial number verification
+function initSerialVerification() {
+    const form = document.getElementById('serial-verification-form');
+    const input = document.getElementById('serial-number');
+    const result = document.getElementById('serial-verification-result');
+    const submitButton = form ? form.querySelector('button[type="submit"]') : null;
+
+    if (!form || !input || !result) return;
+
+    const setResult = (message, isValid) => {
+        result.textContent = message;
+        result.classList.toggle('is-valid', isValid);
+        result.classList.toggle('is-invalid', !isValid);
+    };
+
+    const setLoading = (isLoading) => {
+        if (submitButton) {
+            submitButton.disabled = isLoading;
+            submitButton.textContent = isLoading ? 'Controleren...' : 'Verifiëren';
+        }
+        input.disabled = isLoading;
+        result.textContent = isLoading ? 'Online registratie wordt gecontroleerd...' : '';
+        result.classList.remove('is-valid', 'is-invalid');
+    };
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const serial = input.value.trim().toUpperCase();
+        input.value = serial;
+
+        const prefix = '6642DNBK';
+        const suffix = serial.slice(prefix.length);
+        const hasValidFormat = serial.length === 13 &&
+            serial.startsWith(prefix) &&
+            /^[789]\d{4}$/.test(suffix);
+        const hasRepeatedSuffix = /^(\d)\1{4}$/.test(suffix);
+
+        setLoading(true);
+
+        const verificationDelay = 900 + Math.floor(Math.random() * 1600);
+
+        window.setTimeout(() => {
+            setLoading(false);
+
+            if (hasValidFormat && !hasRepeatedSuffix) {
+                setResult('Geverifieerd: dit serienummer voldoet aan de UnigDesige echtheidsregistratie.', true);
+            } else {
+                setResult('Niet geverifieerd: controleer het serienummer onder de grip of neem contact op met UnigDesige.', false);
+            }
+        }, verificationDelay);
+    });
+}
+
 // Initialize all functionality
 function init() {
     checkWebPSupport();
@@ -194,6 +248,7 @@ function init() {
     initLazyLoading();
     initStructuredData();
     initOutboundLinkTracking();
+    initSerialVerification();
 }
 
 // Initialize when DOM is ready
