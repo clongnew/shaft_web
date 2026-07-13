@@ -61,17 +61,17 @@ function setCurrentPageHighlight() {
     navItems.forEach(item => {
         const itemHref = item.getAttribute('href');
         
-        if (currentPage.includes('specs.html') && (itemHref === 'specs.html' || itemHref === './specs.html')) {
+        if ((currentPage === '/specs' || currentPage.includes('specs.html')) && (itemHref === '/specs' || itemHref === 'specs.html' || itemHref === './specs.html')) {
             item.style.color = '#2a7a2a';
             item.style.fontWeight = '600';
-        } else if (currentPage.includes('faq.html') && (itemHref === 'faq.html' || itemHref === './faq.html' || itemHref === '../faq.html')) {
+        } else if ((currentPage === '/faq' || currentPage.includes('faq.html')) && (itemHref === '/faq' || itemHref === 'faq.html' || itemHref === './faq.html' || itemHref === '../faq.html')) {
             item.style.color = '#2a7a2a';
             item.style.fontWeight = '600';
-        } else if (currentPage.includes('blog/') && (itemHref === 'blog/index.html' || itemHref === './blog/index.html' || itemHref === 'index.html')) {
+        } else if ((currentPage === '/blog' || currentPage.includes('/blog/')) && (itemHref === '/blog' || itemHref === 'blog/index.html' || itemHref === './blog/index.html' || itemHref === 'index.html')) {
             item.style.color = '#2a7a2a';
             item.style.fontWeight = '600';
         } else if (currentPage === '/' || currentPage.endsWith('index.html') || currentPage.endsWith('/')) {
-            if (itemHref === 'index.html' || itemHref === './index.html' || itemHref === '#home') {
+            if (itemHref === '/' || itemHref === '/#home' || itemHref === 'index.html' || itemHref === './index.html' || itemHref === '#home') {
                 item.style.color = '#2a7a2a';
                 item.style.fontWeight = '600';
             }

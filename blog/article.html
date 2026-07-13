@@ -14,10 +14,10 @@
     <meta property="og:locale" content="nl_NL">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://unigdesige.nl/blog/article.html">
+    <link rel="canonical" href="https://unigdesige.nl/blog/article">
     
     <!-- Language alternatives -->
-    <link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/article.html" />
+    <link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/article" />
     
     <!-- Article structured data will be added dynamically by JavaScript -->
     <script type="application/ld+json">
@@ -26,7 +26,7 @@
         "@type": "Article",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://unigdesige.nl/blog/article.html"
+            "@id": "https://unigdesige.nl/blog/article"
         },
         "headline": "UnigDesige Golf Technology Article",
         "description": "Expert insights on golf shaft technology and performance optimization",
@@ -178,13 +178,13 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html#home" class="nav-link">Home</a></li>
-                    <li><a href="../index.html#about" class="nav-link">Over Ons</a></li>
-                    <li><a href="../index.html#features" class="nav-link">Producten</a></li>
-                    <li><a href="../index.html#specs" class="nav-link">Specificaties</a></li>
-                    <li><a href="../index.html#applications" class="nav-link">Doelgroepen</a></li>
-                    <li><a href="../faq.html" class="nav-link">FAQ</a></li>
-                    <li><a href="index.html" class="nav-link" style="color: #2a7a2a;">Blog</a></li>
+                    <li><a href="/#home" class="nav-link">Home</a></li>
+                    <li><a href="/#about" class="nav-link">Over Ons</a></li>
+                    <li><a href="/#features" class="nav-link">Producten</a></li>
+                    <li><a href="/#specs" class="nav-link">Specificaties</a></li>
+                    <li><a href="/#applications" class="nav-link">Doelgroepen</a></li>
+                    <li><a href="/faq" class="nav-link">FAQ</a></li>
+                    <li><a href="/blog" class="nav-link" style="color: #2a7a2a;">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -212,7 +212,7 @@
                 <p>Artikel inhoud wordt geladen...</p>
             </div>
             
-            <a href="index.html" class="back-to-blog-btn">Terug naar Blog</a>
+            <a href="/blog" class="back-to-blog-btn">Terug naar Blog</a>
         </div>
     </section>
 
@@ -245,19 +245,19 @@
             const articleId = parseInt(urlParams.get('id'));
             
             if (!articleId) {
-                window.location.href = 'index.html';
+                window.location.href = '/blog';
                 return;
             }
             
             const article = blogArticles.find(a => a.id === articleId);
             
             if (!article) {
-                window.location.href = 'index.html';
+                window.location.href = '/blog';
                 return;
             }
 
             if (article.slug) {
-                window.location.replace(`${article.slug}.html`);
+                window.location.replace(`/blog/${article.slug}`);
                 return;
             }
             

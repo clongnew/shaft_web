@@ -30,6 +30,14 @@
         "destination": "/faq.html"
     },
     {
+        "source": "/blog/aerospace-carbon-fiber-golf-shaft-technology",
+        "destination": "/blog/aerospace-carbon-fiber-golf-shaft-technology.html"
+    },
+    {
+        "source": "/blog/data-driven-golf-shaft-fitting-guide",
+        "destination": "/blog/data-driven-golf-shaft-fitting-guide.html"
+    },
+    {
         "source": "/blog/article",
         "destination": "/blog/article.html"
     },
@@ -40,6 +48,38 @@
     {
         "source": "/article/:id",
         "destination": "/blog/article.html"
+    }
+    ],
+    "redirects": [
+    {
+        "source": "/index.html",
+        "destination": "/",
+        "permanent": true
+    },
+    {
+        "source": "/specs.html",
+        "destination": "/specs",
+        "permanent": true
+    },
+    {
+        "source": "/faq.html",
+        "destination": "/faq",
+        "permanent": true
+    },
+    {
+        "source": "/blog/index.html",
+        "destination": "/blog",
+        "permanent": true
+    },
+    {
+        "source": "/blog/aerospace-carbon-fiber-golf-shaft-technology.html",
+        "destination": "/blog/aerospace-carbon-fiber-golf-shaft-technology",
+        "permanent": true
+    },
+    {
+        "source": "/blog/data-driven-golf-shaft-fitting-guide.html",
+        "destination": "/blog/data-driven-golf-shaft-fitting-guide",
+        "permanent": true
     }
     ],
     "trailingSlash": false,

@@ -12,43 +12,43 @@
     </url>
     
     <url>
-        <loc>https://unigdesige.nl/specs.html</loc>
+        <loc>https://unigdesige.nl/specs</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/specs.html" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/specs" />
     </url>
     
     <url>
-        <loc>https://unigdesige.nl/blog/</loc>
+        <loc>https://unigdesige.nl/blog</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog" />
     </url>
 
     <url>
-        <loc>https://unigdesige.nl/faq.html</loc>
+        <loc>https://unigdesige.nl/faq</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/faq.html" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/faq" />
     </url>
     
     <url>
-        <loc>https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology.html</loc>
+        <loc>https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology.html" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/aerospace-carbon-fiber-golf-shaft-technology" />
     </url>
 
     <url>
-        <loc>https://unigdesige.nl/blog/data-driven-golf-shaft-fitting-guide.html</loc>
+        <loc>https://unigdesige.nl/blog/data-driven-golf-shaft-fitting-guide</loc>
         <lastmod>2026-07-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/data-driven-golf-shaft-fitting-guide.html" />
+        <xhtml:link rel="alternate" hreflang="nl" href="https://unigdesige.nl/blog/data-driven-golf-shaft-fitting-guide" />
     </url>
 
 </urlset>
