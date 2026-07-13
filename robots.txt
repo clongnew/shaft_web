@@ -5,6 +5,30 @@ Allow: /css/
 Allow: /images/
 Allow: /js/
 
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 2
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YisouSpider
+Allow: /
+Crawl-delay: 2
+
 Disallow: /css/*.map$
 Disallow: /js/*.map$
 Disallow: /*.pdf$
@@ -33,8 +57,6 @@ Allow: /images/
 Allow: /css/
 
 Sitemap: https://unigdesige.nl/sitemap.xml
-
-Crawl-delay: 1
 
 User-agent: AhrefsBot
 Crawl-delay: 5
